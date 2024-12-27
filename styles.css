@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+}
+
+/* Top Navigation Bar */
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    color: #333;
+    display: flex;
+    z-index: 10; /* Ensures it stays on top */
+    border-bottom: 1px solid gray;
+    align-items: center;
+}
+
+.sidebar a {
+    align-items: center;
+    display: block;
+    margin-top: 60px;
+    justify-items: center;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Content */
+.content {
+    margin-left: 250px;
+    padding: 80px 20px;
+}
+
+.topnav .activeLink {
+    color: #3c6ed8;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    padding-top: 60px; /* To account for the topnav */
+    z-index: 5; /* Lower than topnav */
+    border-right: 1px solid gray;
+
+    /* Flexbox for horizontal centering */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Horizontally center items */
+}
+
+.terms-list {
+    text-align: left;
+}
+
+.strict-prohibition {
+    font-weight: bold;
+    color: red;
+    margin-top: 20px;
+}
